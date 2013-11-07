@@ -6,7 +6,7 @@ using Library.Models;
 
 namespace Library.Repositories
 {
-    class BookRepository //: IRepository<Book, int>
+    class BookRepository : IRepository<Book, int>
     {
         LibraryContext _context;
 

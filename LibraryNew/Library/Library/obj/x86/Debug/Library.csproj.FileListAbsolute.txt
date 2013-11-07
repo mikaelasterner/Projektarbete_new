@@ -73,3 +73,12 @@ C:\Users\Mikaela\Documents\Visual Studio 2012\Projects\LibraryNew\Library\Librar
 C:\Users\Mikaela\Documents\Visual Studio 2012\Projects\LibraryNew\Library\Library\bin\Debug\Library.pdb
 C:\Users\Mikaela\Documents\Visual Studio 2012\Projects\LibraryNew\Library\Library\obj\x86\Debug\Library.exe
 C:\Users\Mikaela\Documents\Visual Studio 2012\Projects\LibraryNew\Library\Library\obj\x86\Debug\Library.pdb
+C:\Users\Mikaela\Documents\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\Library.exe.config
+C:\Users\Mikaela\Documents\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.exe
+C:\Users\Mikaela\Documents\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.pdb
+C:\Users\Mikaela\Documents\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\Library.exe
+C:\Users\Mikaela\Documents\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\Library.pdb
+C:\Users\Mikaela\Documents\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\Mikaela\Documents\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.LibraryForm.resources
+C:\Users\Mikaela\Documents\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.Properties.Resources.resources
+C:\Users\Mikaela\Documents\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.csproj.GenerateResource.Cache

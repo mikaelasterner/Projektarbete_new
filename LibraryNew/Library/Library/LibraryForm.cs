@@ -18,12 +18,16 @@ namespace Library
         public LibraryForm()
         {
             BookService _bookservice;
+            AuthorService _authorservice;
+            BookCopyService _bookCopyService;
+            MemberService _memberservice;
+            LoanService _loanservice;
             InitializeComponent();
 
 
             // Uncomment the line you wish to use
             // Use a derived strategy with a Seed-method
-           Database.SetInitializer<LibraryContext>(new LibraryDbInit());
+            Database.SetInitializer<LibraryContext>(new LibraryDbInit());
 
             // Recreate the database only if the models change
             //Database.SetInitializer<LibraryContext>(new DropCreateDatabaseIfModelChanges<LibraryContext>());
@@ -37,12 +41,20 @@ namespace Library
             //BookRepository bookRepository = new RepositoryFactory().GetBookRepository();
             RepositoryFactory factory = new RepositoryFactory();
             _bookservice = new BookService(factory);
+            _authorservice = new AuthorService(factory);
+            _bookCopyService = new BookCopyService(factory);
+            _memberservice = new MemberService(factory);
+            _loanservice = new LoanService(factory);
 
-
-            _bookservice.Add(new Book() { Title = "Mordet på greven", ISBN = "23329" });
-            _bookservice.Add(new Book() { Title = "Mordet på Liselott", ISBN = "26629" });
+            Author a = new Author() { Name = "Anders Svensson" };
+            _authorservice.Add(a);
+            _bookservice.Add(new Book() { Title = "Mordet på greven", ISBN = "23329", Author = a });
+            _bookservice.Add(new Book() { Title = "Mordet på Liselott", ISBN = "26629", Author = new Author { Name = "Gösta Ekman" } });
             _bookservice.Add(new Book() { Title = "Geven", ISBN = "98329" });
+            _bookCopyService.Add(new BookCopy() { Book = new Book { Title = "Den första bokkopian", ISBN = "88629", Author = new Author { Name = "Yngve Ekman" } } });
+
 
         }
+        
     }
 }
