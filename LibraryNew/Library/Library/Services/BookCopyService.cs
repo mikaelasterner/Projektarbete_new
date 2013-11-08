@@ -7,7 +7,7 @@ using Library.Models;
 
 namespace Library.Services
 {
-    class BookCopyService
+    class BookCopyService : IService
     {
         BookCopyRepository _bookCopyRepository;
         //för att komma åt add metoden i repository skapas en instans av repository
@@ -28,6 +28,16 @@ namespace Library.Services
         {
             _bookCopyRepository.Remove(copy);
             //utlös eventet för att lägga till en bok
+        }
+
+        public event EventHandler Updated;
+
+        protected virtual void OnUpdate(EventArgs ea)
+        {
+            if (Updated != null)
+            {
+                Updated(this, ea);
+            }
         }
     }
 }

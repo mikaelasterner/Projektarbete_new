@@ -7,7 +7,7 @@ using Library.Models;
 
 namespace Library.Services
 {
-    class AuthorService
+    class AuthorService : IService
     {
 
         AuthorRepository _AuthorRepository;
@@ -29,6 +29,16 @@ namespace Library.Services
         {
             _AuthorRepository.Remove(author);
             //utlös eventet för att lägga till en bok
+        }
+
+        public event EventHandler Updated;
+
+        protected virtual void OnUpdate(EventArgs ea)
+        {
+            if (Updated != null)
+            {
+                Updated(this, ea);
+            }
         }
     }
 }

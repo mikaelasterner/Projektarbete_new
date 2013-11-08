@@ -82,3 +82,6 @@ C:\Users\Mikaela\Documents\GitHub\Projektarbete_new\LibraryNew\Library\Library\o
 C:\Users\Mikaela\Documents\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.LibraryForm.resources
 C:\Users\Mikaela\Documents\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.Properties.Resources.resources
 C:\Users\Mikaela\Documents\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.csproj.GenerateResource.Cache
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\Library.exe.config
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.exe
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.pdb
