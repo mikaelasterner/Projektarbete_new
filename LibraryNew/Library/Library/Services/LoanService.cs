@@ -9,13 +9,13 @@ namespace Library.Services
 {
     class LoanService : IService
     {
-        LoanRepository _LoanRepository;
+        IRepository<Loan, int> _LoanRepository;
         //för att komma åt add metoden i repository skapas en instans av repository
 
 
-        public LoanService(RepositoryFactory repositoryFactory)
+        public LoanService(IRepository<Loan, int> repository)
         {
-            _LoanRepository = repositoryFactory.GetLoanRepository();
+            _LoanRepository = repository;
         }
 
         public void Add(Loan loan)

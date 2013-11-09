@@ -17,11 +17,7 @@ namespace Library
     {
         public LibraryForm()
         {
-            BookService _bookservice;
-            AuthorService _authorservice;
-            BookCopyService _bookCopyService;
-            MemberService _memberservice;
-            LoanService _loanservice;
+
             InitializeComponent();
 
 
@@ -36,23 +32,14 @@ namespace Library
             //Database.SetInitializer<LibraryContext>(new DropCreateDatabaseAlways<LibraryContext>());
 
 
+            /*
+             * Databasen initieras i LibraryDbInit -> Seed()
+            */
 
 
-            //BookRepository bookRepository = new RepositoryFactory().GetBookRepository();
-            RepositoryFactory factory = new RepositoryFactory();
-            _bookservice = new BookService(factory);
-            _authorservice = new AuthorService(factory);
-            _bookCopyService = new BookCopyService(factory);
-            _memberservice = new MemberService(factory);
-            _loanservice = new LoanService(factory);
-
-            Author a = new Author() { Name = "Anders Svensson" };
-            _authorservice.Add(a);
-            _bookservice.Add(new Book() { Title = "Mordet på greven", ISBN = "23329", Author = a });
-            _bookservice.Add(new Book() { Title = "Mordet på Liselott", ISBN = "26629", Author = new Author { Name = "Gösta Ekman" } });
-            _bookservice.Add(new Book() { Title = "Geven", ISBN = "98329" });
-            _bookCopyService.Add(new BookCopy() { Book = new Book { Title = "Den första bokkopian", ISBN = "88629", Author = new Author { Name = "Yngve Ekman" } } });
-
+            RepositoryFactory repositoryFactory = new RepositoryFactory();
+            BookService _bookservice = new BookService(repositoryFactory.GetBookRepository());
+            _bookservice.Find(1);
 
         }
         

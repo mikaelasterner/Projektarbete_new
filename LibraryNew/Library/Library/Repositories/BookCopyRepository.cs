@@ -28,5 +28,19 @@ namespace Library.Repositories
             _context.SaveChanges();
         }
 
+        public BookCopy Find(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Edit(BookCopy item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<BookCopy> All()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

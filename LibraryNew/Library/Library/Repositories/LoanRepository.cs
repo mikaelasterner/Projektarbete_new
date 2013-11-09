@@ -27,5 +27,20 @@ namespace Library.Repositories
             _context.Loans.Remove(loan);
             _context.SaveChanges();
         }
+
+        public Loan Find(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Edit(Loan item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Loan> All()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

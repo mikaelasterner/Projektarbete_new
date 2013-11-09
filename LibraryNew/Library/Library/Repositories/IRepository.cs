@@ -11,9 +11,9 @@ namespace Library.Repositories
     interface IRepository<T, Tid>
     {
         void Add(T item);
-       // void Remove(T item);
-        //T Find(Tid id);
-        //void Edit(T item);
-        //IEnumerable<T> All();
+        void Remove(T item);
+        T Find(Tid id);
+        void Edit(T item);
+        IEnumerable<T> All();
     }
 }

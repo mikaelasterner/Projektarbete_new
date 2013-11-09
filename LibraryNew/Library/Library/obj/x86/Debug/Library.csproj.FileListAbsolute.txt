@@ -85,3 +85,17 @@ C:\Users\Mikaela\Documents\GitHub\Projektarbete_new\LibraryNew\Library\Library\o
 D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\Library.exe.config
 D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.exe
 D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.pdb
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\Library.exe
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\Library.pdb
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\EntityFramework.dll
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\EntityFramework.SqlServerCompact.dll
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\System.Data.SqlServerCe.dll
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\EntityFramework.xml
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\EntityFramework.SqlServerCompact.xml
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.csprojResolveAssemblyReference.cache
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.LibraryForm.resources
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.Properties.Resources.resources
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\obj\x86\Debug\Library.csproj.GenerateResource.Cache
+D:\Dyallo\Dropbox\DVK11\GitHub\Projektarbete_new\LibraryNew\Library\Library\bin\Debug\bin\Debug\Library.sdf

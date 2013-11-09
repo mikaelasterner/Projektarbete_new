@@ -28,18 +28,22 @@ namespace Library.Repositories
             _context.SaveChanges();
         }
 
-      //  public Book Find(Tid id)
-        //{
-          //  Book bok = null;
-            //hittar en bok
-           // return bok;
-
-        //}
+        public Book Find(int book_id)
+        {
+            Book book = _context.Books.Find(book_id);
+            return book;
+        }
         public void Edit(Book item)
         {
             //uppdaterar en book
         }
-       // public IEnumerable<Book> All()
+
+        public IEnumerable<Book> All()
+        {
+            throw new NotImplementedException();
+        }
+
+        // public IEnumerable<Book> All()
         //{
         //    
         //    //returnerar en lista med alla element

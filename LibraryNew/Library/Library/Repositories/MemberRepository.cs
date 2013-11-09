@@ -27,5 +27,20 @@ namespace Library.Repositories
             _context.Members.Remove(member);
             _context.SaveChanges();
         }
+
+        public Member Find(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Edit(Member item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Member> All()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

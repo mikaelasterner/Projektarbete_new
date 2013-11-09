@@ -27,5 +27,19 @@ namespace Library.Repositories
             _context.SaveChanges();
         }
 
+        public Author Find(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Edit(Author item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Author> All()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

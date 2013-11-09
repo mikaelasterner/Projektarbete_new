@@ -16,7 +16,7 @@ namespace Library.Repositories
             //get { return ContextSingelton.GetContext(); }
         //}
 
-        LibraryContext _context;
+        public LibraryContext _context;
 
         public RepositoryFactory()
         {

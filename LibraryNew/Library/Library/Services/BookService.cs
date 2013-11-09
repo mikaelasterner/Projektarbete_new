@@ -9,13 +9,13 @@ namespace Library.Services
 {
     class BookService : IService
     {
-        BookRepository _bookRepository;
+        IRepository<Book, int> _bookRepository;
         //för att komma åt add metoden i repository skapas en instans av repository
 
 
-        public BookService(RepositoryFactory repositoryFactory)
+        public BookService(IRepository<Book,int> repository)
         {
-            _bookRepository = repositoryFactory.GetBookRepository();
+            _bookRepository = repository;
         }
 
         public void Add(Book book)
@@ -27,7 +27,11 @@ namespace Library.Services
         public void Remove(Book book)
         {
             _bookRepository.Remove(book);
-            //utlös eventet för att lägga till en bok
+            
+        }
+
+        public Book Find(int id) {
+            return _bookRepository.Find(id);
         }
 
         public event EventHandler Updated;

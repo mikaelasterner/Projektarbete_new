@@ -9,13 +9,13 @@ namespace Library.Services
 {
     class MemberService : IService
     {
-        MemberRepository _memberRepository;
+        IRepository<Member, int> _memberRepository;
         //för att komma åt add metoden i repository skapas en instans av repository
 
 
-        public MemberService(RepositoryFactory repositoryFactory)
+        public MemberService(IRepository<Member, int> repository)
         {
-            _memberRepository = repositoryFactory.GetMemberRepository();
+            _memberRepository = repository;
         }
 
         public void Add(Member member)
