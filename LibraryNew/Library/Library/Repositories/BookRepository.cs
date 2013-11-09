@@ -8,7 +8,7 @@ namespace Library.Repositories
 {
     class BookRepository : IRepository<Book, int>
     {
-        LibraryContext _context;
+        readonly LibraryContext _context;
 
         public BookRepository(LibraryContext context)
         {
@@ -28,9 +28,9 @@ namespace Library.Repositories
             _context.SaveChanges();
         }
 
-        public Book Find(int book_id)
+        public Book Find(int bookId)
         {
-            Book book = _context.Books.Find(book_id);
+            Book book = _context.Books.Find(bookId);
             return book;
         }
         public void Edit(Book newBookData)
@@ -43,7 +43,6 @@ namespace Library.Repositories
             bookToEdit.ISBN = newBookData.ISBN;
 
             _context.SaveChanges();
-
         }
 
         public IEnumerable<Book> All()

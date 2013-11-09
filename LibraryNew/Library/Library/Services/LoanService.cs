@@ -9,24 +9,24 @@ namespace Library.Services
 {
     class LoanService : IService
     {
-        IRepository<Loan, int> _LoanRepository;
+        readonly IRepository<Loan, int> _loanRepository;
         //för att komma åt add metoden i repository skapas en instans av repository
 
 
         public LoanService(IRepository<Loan, int> repository)
         {
-            _LoanRepository = repository;
+            _loanRepository = repository;
         }
 
         public void Add(Loan loan)
         {
-            _LoanRepository.Add(loan);
+            _loanRepository.Add(loan);
         //utlös eventet för att lägga till en bok
         }
 
         public void Remove(Loan loan)
         {
-            _LoanRepository.Remove(loan);
+            _loanRepository.Remove(loan);
             //utlös eventet för att lägga till en bok
         }
 
