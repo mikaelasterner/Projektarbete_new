@@ -8,7 +8,7 @@ namespace Library.Repositories
 {
     class BookRepository : IRepository<Book, int>
     {
-        LibraryContext _context;
+        readonly LibraryContext _context;
 
         public BookRepository(LibraryContext context)
         {
@@ -28,26 +28,27 @@ namespace Library.Repositories
             _context.SaveChanges();
         }
 
-        public Book Find(int book_id)
+        public Book Find(int bookId)
         {
-            Book book = _context.Books.Find(book_id);
+            Book book = _context.Books.Find(bookId);
             return book;
         }
-        public void Edit(Book item)
+        public void Edit(Book newBookData)
         {
-            //uppdaterar en book
+            var bookToEdit = Find(newBookData.Id);
+
+            bookToEdit.Title = newBookData.Title;
+            bookToEdit.Author = newBookData.Author;
+            bookToEdit.Description = newBookData.Description;
+            bookToEdit.ISBN = newBookData.ISBN;
+
+            _context.SaveChanges();
         }
 
         public IEnumerable<Book> All()
         {
-            throw new NotImplementedException();
+            return _context.Books;
         }
 
-        // public IEnumerable<Book> All()
-        //{
-        //    
-        //    //returnerar en lista med alla element
-        //    return books;
-        //}
     }
 }

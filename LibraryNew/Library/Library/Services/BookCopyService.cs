@@ -9,7 +9,7 @@ namespace Library.Services
 {
     class BookCopyService : IService
     {
-        IRepository<BookCopy, int> _bookCopyRepository;
+        readonly IRepository<BookCopy, int> _bookCopyRepository;
         //för att komma åt add metoden i repository skapas en instans av repository
 
 
