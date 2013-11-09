@@ -33,21 +33,23 @@ namespace Library.Repositories
             Book book = _context.Books.Find(book_id);
             return book;
         }
-        public void Edit(Book item)
+        public void Edit(Book newBookData)
         {
-            //uppdaterar en book
+            var bookToEdit = Find(newBookData.Id);
+
+            bookToEdit.Title = newBookData.Title;
+            bookToEdit.Author = newBookData.Author;
+            bookToEdit.Description = newBookData.Description;
+            bookToEdit.ISBN = newBookData.ISBN;
+
+            _context.SaveChanges();
+
         }
 
         public IEnumerable<Book> All()
         {
-            throw new NotImplementedException();
+            return _context.Books;
         }
 
-        // public IEnumerable<Book> All()
-        //{
-        //    
-        //    //returnerar en lista med alla element
-        //    return books;
-        //}
     }
 }

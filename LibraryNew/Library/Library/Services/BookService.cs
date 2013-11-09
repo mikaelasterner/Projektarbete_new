@@ -9,7 +9,7 @@ namespace Library.Services
 {
     class BookService : IService
     {
-        IRepository<Book, int> _bookRepository;
+        readonly IRepository<Book, int> _bookRepository;
         //för att komma åt add metoden i repository skapas en instans av repository
 
 
@@ -32,6 +32,11 @@ namespace Library.Services
 
         public Book Find(int id) {
             return _bookRepository.Find(id);
+        }
+
+        public IEnumerable<Book> All()
+        {
+            return _bookRepository.All();
         }
 
         public event EventHandler Updated;
